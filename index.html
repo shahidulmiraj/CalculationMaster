@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation Master</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Calculation Master</h1>
+      <div class="divide">
+        <div class="calculation-card">
+          <div class="calculator-card card">
+            <h2>Simple calculator</h2>
+            <div>
+              <label for="">First number:</label>
+              <input
+                type="number"
+                placeholder="Enter first number"
+                id="num-1"
+              />
+            </div>
+            <div>
+              <label for="opertor">Calculate:</label>
+              <select id="operator">
+                <option value="1">addition</option>
+                <option value="2">subtraction</option>
+                <option value="3">multiplication</option>
+                <option value="4">division</option>
+                <option value="5">calculate interest</option>
+                <option value="6">remainder calculation</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Second number:</label>
+              <input
+                type="number"
+                placeholder="Enter Second number"
+                id="num-2"
+              />
+            </div>
+            <p class="hide error" id="calculator-error-msg">
+              Number should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="calculator-button">Calculate</button>
+            </div>
+          </div>
+          <div class="temparature-card card">
+            <h2>Celsius to Fahrenheit</h2>
+            <div>
+              <label for="">Temparature:</label>
+              <input
+                type="number"
+                placeholder="Enter celsius temparature"
+                id="celsius-temp"
+              />
+            </div>
+            <p class="error hide" id="celsius-error-msg">
+              Temparature should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="ctof-button">Show Fahrenheit</button>
+            </div>
+          </div>
+          <div class="temparature-card card">
+            <h2>Fahrenheit to Celsius</h2>
+            <div>
+              <label for="">Temparature:</label>
+              <input
+                type="number"
+                placeholder="Enter Fahrenheit temparature"
+                id="fahrenheit-temp"
+              />
+            </div>
+            <div>
+              <p class="error hide" id="fahrenheit-error-msg">
+                Temparature should not be empty...
+              </p>
+            </div>
+            <div class="btn">
+              <button type="submit" id="ftoc-button">Show Celsius</button>
+            </div>
+          </div>
+          <div class="circle-card card">
+            <h2>Area of Circle</h2>
+            <div>
+              <label for="">Radius:</label>
+              <input
+                type="number"
+                placeholder="Enter the radius value"
+                id="circle-radius"
+              />
+            </div>
+            <p class="error hide" id="circle-error-msg">
+              Radius value should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="circle-button">Calculate Area</button>
+            </div>
+          </div>
+          <!-- rectangle -->
+          <div class="rectangle-card card">
+            <h2>Area of Rectangle</h2>
+            <p>Area of rectangle is: <b>length * width</b></p>
+            <div>
+              <label for="">Length:</label>
+              <input
+                type="number"
+                placeholder="Enter the length"
+                id="rectangle-length"
+              />
+            </div>
+            <div>
+              <label for="">Width:</label>
+              <input
+                type="number"
+                placeholder="Enter the width"
+                id="rectangle-width"
+              />
+            </div>
+            <p class="error hide" id="rectangle-error-msg">
+              Rectangle length and width should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="rectangle-button">
+                Calculate Area
+              </button>
+            </div>
+          </div>
+          <!-- square -->
+          <div class="square-card card">
+            <h2>Area of square</h2>
+            <p>Area of square is: <b>length * length</b></p>
+            <div>
+              <label for="">Length:</label>
+              <input
+                type="number"
+                placeholder="Enter the length"
+                id="square-length"
+              />
+            </div>
+            <p class="error hide" id="square-error-msg">
+              Length value should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="square-button">Calculate Area</button>
+            </div>
+          </div>
+          <!-- triangle -->
+          <div class="triangle-card card">
+            <h2>Area of Triangle</h2>
+            <p>Area of triangle is: <b>1/2 * base * height</b></p>
+            <div>
+              <label for="">base:</label>
+              <input
+                type="number"
+                placeholder="Enter the base"
+                id="triangle-base"
+              />
+            </div>
+            <div>
+              <label for="">height:</label>
+              <input
+                type="number"
+                placeholder="Enter the height"
+                id="triangle-height"
+              />
+            </div>
+            <p class="error hide" id="triangle-error-msg">
+              Triangle base and height should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="triangle-button">Calculate Area</button>
+            </div>
+          </div>
+          <!-- parallelogram  -->
+          <div class="parallelogram card">
+            <h2>Area of Parallelogram</h2>
+            <p>Area of parallelogram is: <b>base * height</b></p>
+            <div>
+              <label for="">base:</label>
+              <input
+                type="number"
+                placeholder="Enter the base"
+                id="parallelogram-base"
+              />
+            </div>
+            <div>
+              <label for="">height:</label>
+              <input
+                type="number"
+                placeholder="Enter the height"
+                id="parallelogram-height"
+              />
+            </div>
+            <p class="error hide" id="parallelogram-error-msg">
+              Parallelogram base and height should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="parallelogram-button">
+                Calculate Area
+              </button>
+            </div>
+          </div>
+          <!-- rhombus  -->
+          <div class="rhombus card">
+            <h2>Area of Rhombus</h2>
+            <p>Area of rhombus is: <b>1/2 * diagonal1 * diagonal2</b></p>
+            <div>
+              <label for="">Diagonal1:</label>
+              <input
+                type="number"
+                placeholder="Enter the diagonal1"
+                id="rhombus-diagonal1"
+              />
+            </div>
+            <div>
+              <label for="">Diagonal2:</label>
+              <input
+                type="number"
+                placeholder="Enter the diagonal2"
+                id="rhombus-diagonal2"
+              />
+            </div>
+            <p class="error hide" id="rhombus-error-msg">
+              rhombus diagonal1 and diagonal2 should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="rhombus-button">Calculate Area</button>
+            </div>
+          </div>
+          <!-- trapezoid  -->
+          <div class="trapezoid-card card">
+            <h2>Area of Trapezoid</h2>
+            <p>
+              Area of trapezoid is: <b>(1 / 2) * (length + width) * height</b>
+            </p>
+            <div>
+              <label for="">Length:</label>
+              <input
+                type="number"
+                placeholder="Enter the length"
+                id="trapezoid-length"
+              />
+            </div>
+            <div>
+              <label for="">Width:</label>
+              <input
+                type="number"
+                placeholder="Enter the width"
+                id="trapezoid-width"
+              />
+            </div>
+            <div>
+              <label for="">height:</label>
+              <input
+                type="number"
+                placeholder="Enter the height"
+                id="trapezoid-height"
+              />
+            </div>
+            <p class="error hide" id="trapezoid-error-msg">
+              Trapezoid length, width or height should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="trapezoid-button">
+                Calculate Area
+              </button>
+            </div>
+          </div>
+          <!-- ellipse -->
+          <div class="ellipse card">
+            <h2>Area of Ellipse</h2>
+            <p>
+              Area of ellipse is:
+              <b
+                >&pi; * length of semi-major axis * length of semi-minor axis</b
+              >
+            </p>
+            <div>
+              <label for="">Semi-major axis length:</label>
+              <input
+                type="number"
+                placeholder="Enter the length of semi-major axis"
+                id="ellipse-major"
+              />
+            </div>
+            <div>
+              <label for="">Semi-minor axis length:</label>
+              <input
+                type="number"
+                placeholder="Enter the  length of semi-minor axis"
+                id="ellipse-minor"
+              />
+            </div>
+            <p class="error hide" id="ellipse-error-msg">
+              Ellipse axis length should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="ellipse-button">Calculate Area</button>
+            </div>
+          </div>
+          <!-- cube -->
+          <div class="cube-card card">
+            <h2>Area of cube</h2>
+            <p>Area of cube is: <b>6 * length * length</b></p>
+            <div>
+              <label for="">Length:</label>
+              <input
+                type="number"
+                placeholder="Enter the length"
+                id="cube-length"
+              />
+            </div>
+            <p class="error hide" id="cube-error-msg">
+              Length value should not be empty...
+            </p>
+            <div class="btn">
+              <button type="submit" id="cube-button">Calculate Area</button>
+            </div>
+          </div>
+        </div>
+        <div class="result-card">
+          <p id="result">The result is:</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
